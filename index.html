@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Projeto HTML</title>
+    
+    </head>
+
+
+<body>
+    <!--menu superior-->
+   <div id="menu-superior">
+        <a href="https://aluno.dnc.group/painel"><img id= "logoTipo" src="./imagens/logo2.svg" alt="foi de vasco"></a>
+    
+        <h1 id="titulo-menusuperior">Dê os primeiros passos da <br>
+            sua carreira em Tecnologia</h1>
+        <p id="paragrafo1">Inscreva-se no curso gratuito de Introdução à <br>
+            Tecnologia da DNC School e aprenda os principais <br>
+            fundamentos para construir experiências efetivas.</p>
+        
+   </div>
+
+    <!--barra de menu-->        
+   <div id="barra-menu">
+    
+    <p class="certificados"><img src="icones/certificado.svg" alt="erro" class="icones">certificado de conclusão </p>
+    <p class="certificados"><img src="icones/relogio.svg" alt="" class="icones">4 horas de conteudo  </p>
+    <p class="certificados"><img src="icones/camera.svg" alt="" class="icones">aulas online gravadas </p>
+
+   </div>
+   
+    <!--depoimento-->    
+    <div id="depoimento">
+        <iframe width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div>
+            <h1 id="titulo-video">Aprenda com especialistas e <br> comece seu primeiro projeto
+            </h1> <br> <br>
+            <p id="descricao-video">Conheça o processo de desenvolvimento e entenda como utilizar <br>
+                 os principais métodos e ferramentas da área para resolver<br> 
+                 problemas complexos. <br> <br>
+                
+                Conquiste seu certificado e desenvolva um projeto prático para <br> aplicar seus conhecimentos.</p> 
+        </div>
+    
+    </div>
+
+    <!--carrossel-->            
+    <div id="carrossel">
+         <h1 id="titulo-carrossel">Mais de 500 alunos já iniciaram seus estudos</h1>
+                <!--DIVISAO DOS CARDS-->
+                
+                <div id="div-cards">
+                        <img id="seta-esquerda" onclick="RolarParaEsquerda()" src="/icones/seta-esquerda.svg" class="seta">
+                        <img id="leo" class="cards" src="/cards/leonardo.svg" alt="">
+                        <img id="sa" class="cards" src="/cards/samanha.svg" alt="">
+                        <img id="doida" class="cards" src="/cards/doida.svg" alt="">
+                        <img id="seta-direita" onclick="RolarParaDireita()" src="/icones/seta-direita.svg" class="seta">
+                </div>
+            
+                      
+    </div>
+
+    <!--FORMULARIO-->    
+    <div id="formulario">
+        <h1 id="tuitulo-formulario">Comece agora mesmo e dê o
+         próximo passo da sua carreira</h1>
+
+            <form action="https://api.sheetmonkey.io/form/cvNb884JuKRxGVQpPpMD9o" method="POST">
+                <input type="text" placeholder="Nome" name="Name" required> <br>
+                <input type="email" placeholder="Email" name="Email" required> <br>
+                <input type="number" placeholder="telefone" name="Phone"> <br>
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <button  type="submit">Acesse a ementa gratis </button>
+            </form>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
